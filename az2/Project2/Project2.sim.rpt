@@ -1,0 +1,217 @@
+Simulator report for Project2
+Wed Nov 02 18:50:35 2022
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 48 nodes     ;
+; Simulation Coverage         ;      83.33 % ;
+; Total Number of Transitions ; 2290         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Functional   ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; Project2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      83.33 % ;
+; Total nodes checked                                 ; 48           ;
+; Total output ports checked                          ; 48           ;
+; Total output ports with complete 1/0-value coverage ; 40           ;
+; Total output ports with no 1/0-value coverage       ; 8            ;
+; Total output ports with no 1-value coverage         ; 8            ;
+; Total output ports with no 0-value coverage         ; 8            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                        ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |Project2|IN                           ; |Project2|IN                           ; out              ;
+; |Project2|inst13                       ; |Project2|inst13                       ; out0             ;
+; |Project2|OUT                          ; |Project2|OUT                          ; out              ;
+; |Project2|Reset                        ; |Project2|Reset                        ; out              ;
+; |Project2|CLK                          ; |Project2|CLK                          ; out              ;
+; |Project2|Close                        ; |Project2|Close                        ; pin_out          ;
+; |Project2|inst                         ; |Project2|inst                         ; out0             ;
+; |Project2|q4                           ; |Project2|q4                           ; pin_out          ;
+; |Project2|q3                           ; |Project2|q3                           ; pin_out          ;
+; |Project2|Open                         ; |Project2|Open                         ; pin_out          ;
+; |Project2|inst4                        ; |Project2|inst4                        ; regout           ;
+; |Project2|inst4~0                      ; |Project2|inst4~0                      ; out0             ;
+; |Project2|inst4~1                      ; |Project2|inst4~1                      ; out0             ;
+; |Project2|inst4~2                      ; |Project2|inst4~2                      ; out0             ;
+; |Project2|inst10                       ; |Project2|inst10                       ; out0             ;
+; |Project2|Ent                          ; |Project2|Ent                          ; out              ;
+; |Project2|T                            ; |Project2|T                            ; out              ;
+; |Project2|UpDownCounter:inst3|inst27~0 ; |Project2|UpDownCounter:inst3|inst27~0 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst27~2 ; |Project2|UpDownCounter:inst3|inst27~2 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst26   ; |Project2|UpDownCounter:inst3|inst26   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst25   ; |Project2|UpDownCounter:inst3|inst25   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst23   ; |Project2|UpDownCounter:inst3|inst23   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst21   ; |Project2|UpDownCounter:inst3|inst21   ; regout           ;
+; |Project2|UpDownCounter:inst3|inst21~0 ; |Project2|UpDownCounter:inst3|inst21~0 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst21~1 ; |Project2|UpDownCounter:inst3|inst21~1 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst21~2 ; |Project2|UpDownCounter:inst3|inst21~2 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst13   ; |Project2|UpDownCounter:inst3|inst13   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst12   ; |Project2|UpDownCounter:inst3|inst12   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst10   ; |Project2|UpDownCounter:inst3|inst10   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst8    ; |Project2|UpDownCounter:inst3|inst8    ; regout           ;
+; |Project2|UpDownCounter:inst3|inst8~0  ; |Project2|UpDownCounter:inst3|inst8~0  ; out0             ;
+; |Project2|UpDownCounter:inst3|inst8~1  ; |Project2|UpDownCounter:inst3|inst8~1  ; out0             ;
+; |Project2|UpDownCounter:inst3|inst8~2  ; |Project2|UpDownCounter:inst3|inst8~2  ; out0             ;
+; |Project2|UpDownCounter:inst3|inst11   ; |Project2|UpDownCounter:inst3|inst11   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst24   ; |Project2|UpDownCounter:inst3|inst24   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst20~0 ; |Project2|UpDownCounter:inst3|inst20~0 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst20~2 ; |Project2|UpDownCounter:inst3|inst20~2 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst32   ; |Project2|UpDownCounter:inst3|inst32   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst31   ; |Project2|UpDownCounter:inst3|inst31   ; out0             ;
+; |Project2|UpDownCounter:inst3|inst29   ; |Project2|UpDownCounter:inst3|inst29   ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |Project2|q2                           ; |Project2|q2                           ; pin_out          ;
+; |Project2|q1                           ; |Project2|q1                           ; pin_out          ;
+; |Project2|inst18                       ; |Project2|inst18                       ; out0             ;
+; |Project2|UpDownCounter:inst3|inst27   ; |Project2|UpDownCounter:inst3|inst27   ; regout           ;
+; |Project2|UpDownCounter:inst3|inst27~1 ; |Project2|UpDownCounter:inst3|inst27~1 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst20   ; |Project2|UpDownCounter:inst3|inst20   ; regout           ;
+; |Project2|UpDownCounter:inst3|inst20~1 ; |Project2|UpDownCounter:inst3|inst20~1 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst30   ; |Project2|UpDownCounter:inst3|inst30   ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |Project2|q2                           ; |Project2|q2                           ; pin_out          ;
+; |Project2|q1                           ; |Project2|q1                           ; pin_out          ;
+; |Project2|inst18                       ; |Project2|inst18                       ; out0             ;
+; |Project2|UpDownCounter:inst3|inst27   ; |Project2|UpDownCounter:inst3|inst27   ; regout           ;
+; |Project2|UpDownCounter:inst3|inst27~1 ; |Project2|UpDownCounter:inst3|inst27~1 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst20   ; |Project2|UpDownCounter:inst3|inst20   ; regout           ;
+; |Project2|UpDownCounter:inst3|inst20~1 ; |Project2|UpDownCounter:inst3|inst20~1 ; out0             ;
+; |Project2|UpDownCounter:inst3|inst30   ; |Project2|UpDownCounter:inst3|inst30   ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
+    Info: Processing started: Wed Nov 02 18:50:35 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Project2 -c Project2
+Info: Using vector source file "C:/Users/AlieNiT/Documents/quartus/az2/Project2/Project2.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      83.33 %
+Info: Number of transitions in simulation is 2290
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 149 megabytes
+    Info: Processing ended: Wed Nov 02 18:50:35 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
